@@ -3,22 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ca5157e9-1e76-4e81-867a-a8e841666a7c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.roadhogrc" beforeDir="false" afterPath="$PROJECT_DIR$/.roadhogrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/yurencloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/yurencloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Agreement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Agreement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/IndexPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../server/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/CatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/util/UploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/util/UploadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/CatalogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/CheckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/InfoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/controller/api/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/model/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/model/ArticleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/yurencloud/model/ArticleExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/com/yurencloud/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/com/yurencloud/mapper/ArticleMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/css/_variable.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="128">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -95,6 +87,7 @@
       <find>愚人云端</find>
       <find>王乐</find>
       <find>王乐城</find>
+      <find>/api</find>
     </findStrings>
     <replaceStrings>
       <replace>万汇典藏</replace>
@@ -208,15 +201,16 @@
       <updated>1519284429984</updated>
       <workItem from="1519284438689" duration="3659000" />
       <workItem from="1519348121144" duration="35000" />
-      <workItem from="1601430196690" duration="7789000" />
+      <workItem from="1601430196690" duration="8993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20490000" />
+    <option name="totallyTimeSpent" value="21694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -565,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/_variable.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="128">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

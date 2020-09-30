@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.yurencloud.model.Article">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="title" jdbcType="VARCHAR" property="title" />
-    <result column="catalog_id" jdbcType="INTEGER" property="catalogId" />
+    <result column="catalog_id" jdbcType="VARCHAR" property="catalogId" />
     <result column="image" jdbcType="VARCHAR" property="image" />
     <result column="top" jdbcType="TINYINT" property="top" />
     <result column="recommend" jdbcType="TINYINT" property="recommend" />
@@ -16,10 +16,9 @@
     <association property="catalog" column="catalog_id" select="selectCatalog"/>
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yurencloud.model.Article">
-    <result column="content" jdbcType="LONGVARCHAR" property="content" />
   </resultMap>
   <!--关联目录-->
-  <select id="selectCatalog" parameterType="int" resultMap="com.yurencloud.mapper.CatalogMapper.BaseResultMap">
+  <select id="selectCatalog" parameterType="String" resultMap="com.yurencloud.mapper.CatalogMapper.BaseResultMap">
     select *
     from catalog where id = #{id}
   </select>
@@ -147,12 +146,12 @@
   <insert id="insert" parameterType="com.yurencloud.model.Article">
     insert into article (id, title, catalog_id, 
       image, top, recommend, 
-      view, good, created_at, 
+      view, good, created_at,
       updated_at, words, content
       )
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{catalogId,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{catalogId,jdbcType=VARCHAR},
       #{image,jdbcType=VARCHAR}, #{top,jdbcType=TINYINT}, #{recommend,jdbcType=TINYINT}, 
-      #{view,jdbcType=INTEGER}, #{good,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, 
+      #{view,jdbcType=INTEGER}, #{good,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP},
       #{updatedAt,jdbcType=TIMESTAMP}, #{words,jdbcType=INTEGER}, #{content,jdbcType=LONGVARCHAR}
       )
   </insert>
@@ -204,7 +203,7 @@
         #{title,jdbcType=VARCHAR},
       </if>
       <if test="catalogId != null">
-        #{catalogId,jdbcType=INTEGER},
+        #{catalogId,jdbcType=VARCHAR},
       </if>
       <if test="image != null">
         #{image,jdbcType=VARCHAR},
@@ -251,7 +250,7 @@
         title = #{record.title,jdbcType=VARCHAR},
       </if>
       <if test="record.catalogId != null">
-        catalog_id = #{record.catalogId,jdbcType=INTEGER},
+        catalog_id = #{record.catalogId,jdbcType=VARCHAR},
       </if>
       <if test="record.image != null">
         image = #{record.image,jdbcType=VARCHAR},
@@ -289,7 +288,7 @@
     update article
     set id = #{record.id,jdbcType=INTEGER},
       title = #{record.title,jdbcType=VARCHAR},
-      catalog_id = #{record.catalogId,jdbcType=INTEGER},
+      catalog_id = #{record.catalogId,jdbcType=VARCHAR},
       image = #{record.image,jdbcType=VARCHAR},
       top = #{record.top,jdbcType=TINYINT},
       recommend = #{record.recommend,jdbcType=TINYINT},
@@ -307,7 +306,7 @@
     update article
     set id = #{record.id,jdbcType=INTEGER},
       title = #{record.title,jdbcType=VARCHAR},
-      catalog_id = #{record.catalogId,jdbcType=INTEGER},
+      catalog_id = #{record.catalogId,jdbcType=VARCHAR},
       image = #{record.image,jdbcType=VARCHAR},
       top = #{record.top,jdbcType=TINYINT},
       recommend = #{record.recommend,jdbcType=TINYINT},
@@ -327,7 +326,7 @@
         title = #{title,jdbcType=VARCHAR},
       </if>
       <if test="catalogId != null">
-        catalog_id = #{catalogId,jdbcType=INTEGER},
+        catalog_id = #{catalogId,jdbcType=VARCHAR},
       </if>
       <if test="image != null">
         image = #{image,jdbcType=VARCHAR},
@@ -362,7 +361,7 @@
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.yurencloud.model.Article">
     update article
     set title = #{title,jdbcType=VARCHAR},
-      catalog_id = #{catalogId,jdbcType=INTEGER},
+      catalog_id = #{catalogId,jdbcType=VARCHAR},
       image = #{image,jdbcType=VARCHAR},
       top = #{top,jdbcType=TINYINT},
       recommend = #{recommend,jdbcType=TINYINT},
@@ -377,7 +376,7 @@
   <update id="updateByPrimaryKey" parameterType="com.yurencloud.model.Article">
     update article
     set title = #{title,jdbcType=VARCHAR},
-      catalog_id = #{catalogId,jdbcType=INTEGER},
+      catalog_id = #{catalogId,jdbcType=VARCHAR},
       image = #{image,jdbcType=VARCHAR},
       top = #{top,jdbcType=TINYINT},
       recommend = #{recommend,jdbcType=TINYINT},
