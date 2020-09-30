@@ -118,7 +118,7 @@ class IndexPage extends React.Component {
           </Layout>
         </Content>
         <Footer style={{ textAlign: 'center'}}>
-          愚人云端 ©2017 浙ICP备17042562号
+          万汇典藏 ©2017 浙ICP备17042562号
         </Footer>
       </Layout>
     );

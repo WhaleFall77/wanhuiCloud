@@ -52,7 +52,7 @@ class Article extends React.Component {
                 <img className={style.avatar} src={avatar} alt="" />
                 <div className={style.detail}>
                   <div>
-                        王乐城愚人云端
+                        王浩万汇典藏
                       </div>
                   <div>
                     <span>更新于 {article.updatedAt}</span>
@@ -74,7 +74,7 @@ class Article extends React.Component {
           </Layout>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
-          愚人云端 ©2017 浙ICP备17042562号
+          万汇典藏 ©2017 浙ICP备17042562号
         </Footer>
       </Layout>
     );

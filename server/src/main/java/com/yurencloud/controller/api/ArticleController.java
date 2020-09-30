@@ -162,7 +162,7 @@ public class ArticleController {
             criteria.andTitleLike("%" + params.get("title")[0] + "%");
         }
 
-        example.setOrderByClause("top desc, updated_at desc");
+//        example.setOrderByClause("top desc, updated_at desc");
 
         // PageHelper一定要写在你要分页的方法相邻之前，因为如果PageHelper会为紧跟着的第一个mybatis查询进行分页
         PageHelper.startPage(Integer.valueOf(params.get("page")[0]), Integer.valueOf(params.get("pageSize")[0]));
@@ -183,9 +183,9 @@ public class ArticleController {
     @GetMapping("/public/article/{id}")
     public Message getPublicArticle(@PathVariable("id") Integer id) {
         Article article = articleMapper.selectByPrimaryKey(id);
-        if (article.getCatalogId() == 11) {
-            return new Message(false, "该目录不对外开放");
-        }
+//        if (article.getCatalogId() == 11) {
+//            return new Message(false, "该目录不对外开放");
+//        }
         return new Message(true, article);
     }
 

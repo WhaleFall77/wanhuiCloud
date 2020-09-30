@@ -32,6 +32,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter{
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        //前者 配置虚拟路径    后者配的是和虚拟路径映射的物理路径
         registry.addResourceHandler("/upload/**").addResourceLocations("file:"+uploadpath);
         super.addResourceHandlers(registry);
     }

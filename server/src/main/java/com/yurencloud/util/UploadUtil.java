@@ -52,10 +52,10 @@ public class UploadUtil {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
+            // upload 是在WebMvcConfig中配置的虚拟路径
             path = domainUrl + "/upload/" + folder + "/" + time + "/" + fileName;
         }
-
+        //返回虚拟路径 以隐藏真实路径
         return path;
     }
 

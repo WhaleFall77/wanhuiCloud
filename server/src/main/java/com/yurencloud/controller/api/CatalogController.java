@@ -107,9 +107,9 @@ public class CatalogController {
     @ApiImplicitParam(name = "id", value = "文章id",required = true, dataType = "Integer", paramType = "path")
     @DeleteMapping("/catalog/{id}")
     public Message deleteArticle(@PathVariable("id") Integer id){
-        if(id == 1 || id == 6 || id == 11){
-            return new Message(false,"未定义目录不得删除!");
-        }
+//        if(id == 1 || id == 6 || id == 11){
+//            return new Message(false,"未定义目录不得删除!");
+//        }
         Catalog catalog = catalogMapper.selectByPrimaryKey(id);
         //如果该目录是菜单目录
         List<Catalog> list = new ArrayList<>();

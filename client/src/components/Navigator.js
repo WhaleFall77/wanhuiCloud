@@ -46,11 +46,11 @@ class Navigator extends React.Component {
     return (
       <Header className="header" style={{ minWidth: '1200px' }}>
         <Head>
-          <title>愚人云端</title>
+          <title>万汇典藏</title>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-          <meta name="author" content="王乐城;http://yurencloud.com" />
-          <meta name="keywords" content="愚人云端,王乐城愚人云端,王乐城,前端,web前端,yurencloud,愚人,云端" />
-          <meta name="description" content="愚人云端专注web前端探索。愚人云端-愚人有大智。" />
+          <meta name="author" content="王浩" />
+          <meta name="keywords" content="万汇典藏,王浩万汇典藏,王浩,前端,web前端,yurencloud,愚人,云端" />
+          <meta name="description" content="万汇典藏专注web前端探索。万汇典藏-愚人有大智。" />
         </Head>
         <div className="logo" />
         <Menu
@@ -64,7 +64,7 @@ class Navigator extends React.Component {
             src={img} alt=""
             style={{ width: 40, height: 30 }}
           /></Menu.Item>
-          <Menu.Item key="index" style={{ fontSize: 16 }}>愚人云端</Menu.Item>
+          <Menu.Item key="index" style={{ fontSize: 16 }}>万汇典藏</Menu.Item>
           {catalogMenu.map(item => <Menu.Item key={item.value}>{item.label}</Menu.Item>)}
           <Menu.Item key="profile"><Link to="/profile">博客作者</Link></Menu.Item>
           {
