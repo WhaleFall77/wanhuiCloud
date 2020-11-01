@@ -1,9 +1,9 @@
 const DEV = {
-  API_URL: 'http://localhost:8080',
+  API_URL: 'http://39.107.38.16:8080',
 };
 
 const PRO = {
-  API_URL: 'http://localhost:8080',
+  API_URL: 'http://39.107.38.16:8080',
 };
 
 let ENV = {};

@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812dfa62-c407-4532-be0a-b210280a102e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.roadhogrc" beforeDir="false" afterPath="$PROJECT_DIR$/client/.roadhogrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/config/Swagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/config/Swagger2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/config/UserWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/config/UserWebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/controller/api/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/controller/api/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/controller/web/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/controller/web/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/yurencloud/model/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/com/yurencloud/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/com/yurencloud/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/static/upload/article/image/2018-02-17/38a802ce-32d0-40bb-bc12-120ad87c6c7d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/static/upload/article/image/2018-02-19/16c9ff71-ba4d-4d72-b8c5-9c12a37d410b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/static/upload/article/image/2018-02-19/1a1db7ec-8dd4-4b8c-8175-251b8cd130e5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/static/upload/article/image/2018-02-19/1aa497c8-3d2e-43a7-953e-a04722419636.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="525">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -57,8 +68,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="-10" />
+    <option name="width" value="1939" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -66,7 +77,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,6 +115,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +123,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,25 +159,23 @@
       <workItem from="1517997187139" duration="120000" />
       <workItem from="1519694436719" duration="618000" />
       <workItem from="1601374521754" duration="1065000" />
+      <workItem from="1602772102637" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1828000" />
+    <option name="totallyTimeSpent" value="1885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Image Layers" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1621984" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -178,15 +187,17 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32979977" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="ReactNative" order="10" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.20095949" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.20040214" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +206,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client/src/components/Edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="525">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />

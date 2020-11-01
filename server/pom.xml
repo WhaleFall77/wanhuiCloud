@@ -95,6 +95,14 @@
 			<artifactId>java-jwt</artifactId>
 			<version>3.3.0</version>
 		</dependency>
+
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
 		<!--引入JWT解析库-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>

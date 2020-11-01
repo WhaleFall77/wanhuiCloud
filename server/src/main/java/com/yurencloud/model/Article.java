@@ -52,7 +52,4 @@ public class Article implements Serializable {
 
     private String content;
 
-    private Catalog catalog;
-
-
 }

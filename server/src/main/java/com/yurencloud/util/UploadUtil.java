@@ -1,6 +1,7 @@
 package com.yurencloud.util;
 
 
+import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
@@ -46,7 +47,8 @@ public class UploadUtil {
             }
 
             try {
-                file.transferTo(dest);
+//                file.transferTo(dest);
+                FileUtils.copyInputStreamToFile(file.getInputStream(), dest);
             } catch (IllegalStateException e) {
                 e.printStackTrace();
             } catch (IOException e) {

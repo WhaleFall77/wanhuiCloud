@@ -13,15 +13,9 @@
     <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
     <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
     <result column="words" jdbcType="INTEGER" property="words" />
-    <association property="catalog" column="catalog_id" select="selectCatalog"/>
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yurencloud.model.Article">
   </resultMap>
-  <!--关联目录-->
-  <select id="selectCatalog" parameterType="String" resultMap="com.yurencloud.mapper.CatalogMapper.BaseResultMap">
-    select *
-    from catalog where id = #{id}
-  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

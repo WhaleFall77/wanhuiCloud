@@ -4,10 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yurencloud.mapper.ArticleMapper;
-import com.yurencloud.mapper.CatalogMapper;
-import com.yurencloud.mapper.UserGoodMapper;
 import com.yurencloud.model.*;
-import com.yurencloud.util.IpUtil;
 import com.yurencloud.util.UploadUtil;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -15,16 +12,14 @@ import io.swagger.annotations.ApiOperation;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 @RestController
+//@RequestMapping("/api")
 public class ArticleController {
 
     @Autowired

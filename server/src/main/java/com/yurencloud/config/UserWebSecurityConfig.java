@@ -63,9 +63,11 @@ public class UserWebSecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .authorizeRequests()
                 //.antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+//                .antMatchers("/api/actuator/**").permitAll()
                 .antMatchers("/actuator/**").permitAll()
 //                .antMatchers("/actuator/**").hasAuthority("ADMIN")
                 // 允许对于网站静态资源的无授权访问
+//                .antMatchers("/api/public/**")
                 .antMatchers("/public/**")
                 .permitAll()
                 .antMatchers(
@@ -80,10 +82,14 @@ public class UserWebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-ui.html",
                         "/swagger-resources/**",
                         "/webjar/**",
+//                        "api/userInfo/**",
+                        "/userInfo/**",
                         "/upload/article/image/**",// 允许用get访问upload的所有文件
+//                        "/api/article/**"
                         "/article/**"
                 ).permitAll()
                 // 对于获取token的rest api要允许匿名访问
+//                .antMatchers("/api/auth/**").permitAll()
                 .antMatchers("/auth/**").permitAll()
                 // 除上面外的所有请求全部需要鉴权认证
                 .anyRequest().authenticated();
@@ -98,7 +104,7 @@ public class UserWebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/upload/**");
+        web.ignoring().antMatchers("/api/upload/**");
     }
 
 
