@@ -74,6 +74,12 @@ public class AuthServiceImpl implements AuthService {
         return new Message(true,"注册成功，请登入！");
     }
 
+    public static void main(String[] args) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        String caodongjie = encoder.encode("caodongjie");
+        System.out.println(caodongjie);
+    }
+
     //用户登入
     @Override
     public String login(String username, String password) {

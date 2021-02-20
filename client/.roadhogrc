@@ -1,49 +1,13 @@
-{
-  "entry": "src/index.js",
-  "env": {
-    "development": {
-      "extraBabelPlugins": [
-        "dva-hmr",
-        "transform-runtime",
-        ["import", { "libraryName": "antd", "style": "css" }],
-        ["module-resolver", {
-              "root": ["./src"],
-              "alias": {
-                "components": "./src/components",
-                "utils": "./src/utils",
-                "config": "./src/utils/config",
-                "services": "./src/services",
-                "models": "./src/models",
-                "routes": "./src/routes",
-                "assets": "./src/assets"
-              }
-            }]
-      ]
-    },
-    "production": {
-      "extraBabelPlugins": [
-        "transform-runtime",
-        ["import", { "libraryName": "antd", "style": "css" }],
-        ["module-resolver", {
-                      "root": ["./src"],
-                      "alias": {
-                        "components": "./src/components",
-                        "utils": "./src/utils",
-                        "config": "./src/utils/config",
-                        "services": "./src/services",
-                        "models": "./src/models",
-                        "routes": "./src/routes",
-                        "assets": "./src/assets"
-                      }
-                    }]
-      ]
-    }
-  },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:8080/",
-      "changeOrigin": true,
-      "pathRewrite": { "^/api" : "" }
-     }
-  }
-}
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('1','1','A8008,A8007,A8045,57516',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('2','3','A8008,A8007,A8045,57516',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('3','5','A8055,57513,A8031,57518',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('4','4','A8031,57518,A8055,57513',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('5','10','57426,57437,57432,57339',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('6','8','57520,57522,57425,57523',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('7','6','57511,57512,57409,57516',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('8','9','57506,57502,57505,57514',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('9','11','57514,57510,57516,A8045',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('10','12','57517,57506,57612,57519',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('11','7','57612,57519,57509,57518',null,null);
+INSERT INTO "STLF"."STLF_QC"."WEATHER_STATION_INFO"("ID","CITY_ID","STATION_ID","CREATETIME","UPDATETIME") VALUES('12','2','A8008,A8007,A8045,57516',null,null);
+
